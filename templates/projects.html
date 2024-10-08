@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+    <h2 class="title">My Projects</h2>
+    <div id="project-list">
+        <!-- Renderizamos los proyectos desde el servidor -->
+        {% for project in projects %}
+            <div class="box">
+                <h3 class="title">{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+            </div>
+        {% else %}
+            <p>No projects available at the moment.</p>
+        {% endfor %}
+    </div>
+{% endblock %}

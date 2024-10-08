@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}Portfolio Miguel{% endblock %}
+
+{% block content %}
+<div class="columns">
+    <!-- Columna para la imagen -->
+    <div class="column is-one-third">
+        <figure class="image is-128x128">
+            <img class="is-rounded" src="/static/images/avatar.jpeg" alt="Profile Picture">
+        </figure>
+    </div>
+
+    <!-- Columna para el texto de bienvenida -->
+    <div class="column">
+        <h2 class="title">Miguel Moreno</h2>
+        <p class="subtitle">I am a Data Scientist with more than 4 years of experience in the 
+            development of Data Analytics, Data Engineering and Machine Learning solutions 
+            using tools and technologies such as Python, AWS, SQL, PowerBI and Qlik, 
+            among others. Experienced in ETL process creation, machine learning model 
+            development and maintenance, API development, exploratory data analysis and 
+            data visualization. Analytical and creative problem solver.</p>
+    </div>
+</div>
+
+<!-- Sección para habilidades -->
+<div class="section">
+    <h3 class="title">Skills</h3>
+    <div class="columns is-multiline">
+        <div class="column is-one-quarter">
+            <div class="box">
+                <p class="has-text-weight-semibold">Python</p>
+                <progress class="progress" value="90" max="100">90%</progress>
+            </div>
+        </div>
+        <div class="column is-one-quarter">
+            <div class="box">
+                <p class="has-text-weight-semibold">Machine Learning</p>
+                <progress class="progress" value="85" max="100">85%</progress>
+            </div>
+        </div>
+        <div class="column is-one-quarter">
+            <div class="box">
+                <p class="has-text-weight-semibold">Data Analysis</p>
+                <progress class="progress" value="80" max="100">80%</progress>
+            </div>
+        </div>
+        <div class="column is-one-quarter">
+            <div class="box">
+                <p class="has-text-weight-semibold">AWS</p>
+                <progress class="progress" value="70" max="100">70%</progress>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

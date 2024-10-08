@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio Miguel{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <h1 class="title">Portfolio</h1>
+          </a>
+      
+          <!-- Botón de hamburguesa para pantallas pequeñas -->
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <!-- Menú colapsable -->
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="/">Home</a>
+            <a class="navbar-item" href="/projects">Projects</a>
+          </div>
+        </div>
+      </nav>
+
+    <section class="section">
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer has-background-dark has-text-white">
+        <div class="content has-text-centered">
+            <div class="is-flex is-justify-content-center is-align-items-center">
+                <a href="http://www.linkedin.com/in/miguel-moreno-rodr%C3%ADguez-0164a5123" target="_blank" class="icon has-text-white mx-3">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/miguelm7" target="_blank" class="icon has-text-white mx-3">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="/static/files/CV MIGUEL (ES).pdf" download class="icon has-text-white mx-3">
+                    <i class="fas fa-file-download fa-2x"></i>
+                </a>
+                <a href="mailto:miguelmore100@gmail.com" class="icon has-text-white mx-3">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
+            <!-- <p class="has-text-white">
+                © 2024 My Portfolio. All rights reserved.
+            </p> -->
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JS -->
+    <script src="/static/js/navbar.js"></script>
+
+</body>
+</html>
